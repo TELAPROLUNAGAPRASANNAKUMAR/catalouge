@@ -50,7 +50,7 @@ pipeline {
          //sonar-scanner command expect sonar-project.properties should be available
         stage('Sonar Scan') {
              steps {
-                 sh 'ls-ltr'
+                 sh 'ls -ltr'
                  sh 'sonar-scanner'
             }
         }
