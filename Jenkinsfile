@@ -42,18 +42,18 @@ pipeline {
                  sh 'npm install'
             }
         }
-         stage('Unit test') {
+        stage('Unit test') {
              steps {
                  echo "unit testing is done here"
             }
         }
          //sonar-scanner command expect sonar-project.properties should be available
-         stage('Sonar Scan') {
+        stage('Sonar Scan') {
              steps {
                  echo "Sonar scan done"
             }
         }
-    }
+    
         stage('Build') {
             steps {
                 echo 'Building..'
@@ -151,7 +151,7 @@ pipeline {
                     }
                 }
             }
-}
+        }
 
     }
 
@@ -166,3 +166,4 @@ pipeline {
             echo 'I will run when failure'
         }
     }
+}
